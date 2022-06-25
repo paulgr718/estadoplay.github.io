@@ -1,0 +1,13 @@
+.ondas{
+	position: fixed;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+    
+}
+
+@media (max-width: 991.98px) {
+  .ondas {
+    height: 100%; 
+    width: 125%} }

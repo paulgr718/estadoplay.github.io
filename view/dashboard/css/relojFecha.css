@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+#contenedor-rf{
+display: none;
+}
+    #fecha {
+       display: none; 
+    }
+    #tiempo {
+       display: none; 
+    }
+} 

@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.ondas{
+	position: fixed;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.contenedor {
+	width: 100vh;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7rem;
+	padding: 0 2rem;
+}
+.play-img {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.play-img img{
+width: 500px;
+}
+.user-img{
+	width: 100px;
+}
+.cont-login {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+form {
+	width: 360px;
+}
+form h2{
+	font-size: 2.9rem;
+	text-transform: uppercase;
+	margin: 15px 0;
+	color: #333;
+
+}
+.inp-cont {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #D9D9D9;
+}
+.inp-cont.uno {
+	margin-top: 0;
+}
+.inp-cont.dos {
+	margin-bottom: 4px;
+}
+.i{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.i i {
+	color: #D9D9D9;
+	transition: .3s;
+}
+.inp-cont > div {
+	position: relative;
+	height: 45px;
+}
+.inp-cont > div h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+.input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+	color: #555;
+}
+
+.inp-cont::after, .inp-cont::before{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: #00E2EB;
+	transition: .3s;
+}
+.inp-cont::after{
+right: 50%;
+}
+.inp-cont::before{
+left: 50%;
+}
+.inp-cont.ic .i i{
+	color: #00E2EB;
+}
+.inp-cont.ic div h5{
+	top: -5px;
+	font-size: 15px;
+}
+.inp-cont.ic::after, .inp-cont.ic::before{
+ width: 50%;
+}
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+	text-align: center;
+}
+a:hover{
+	color: #00E2EB;
+}
+.boton{
+	position: relative;
+	display: block;
+	width: 100%;
+	border-radius: 25px;
+	margin: 1rem 0;
+	height: 45px;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+	background-image: linear-gradient(to right, #00E2EB, #00E2EB, #00E2EB);
+	overflow: hidden;
+	background-size: 200%;
+	transition: 0.2s;
+	text-transform: uppercase;
+}
+.boton:hover{
+	background-image: linear-gradient(to right, #E6E6E6, #E6E6E6, #E6E6E6);
+background-position: right;
+color: #999;
+box-shadow: 0 0 1px #00D9E7, 0 0  10px #00D9E7, 0 0 20px #00D9E7;
+
+}
